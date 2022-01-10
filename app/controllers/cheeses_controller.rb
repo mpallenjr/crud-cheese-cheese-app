@@ -5,13 +5,14 @@ class CheesesController < ApplicationController
   end
   
   def create
-    add_cheese = Cheese.create(name: "Manchego", 
-      origin: "Spain", 
-      milk:"Sheep", 
-      firmness:"Semi-Soft", 
-      image_url:"http://images.squarespace-cdn.com/content/v1/58d5711a9f7456928cbaf420/1529692740910-4D47P1844VI8SAWTY61Y/Image+%5BSquare%5D.jpg")
+    add_cheese = Cheese.create(
+      name: params[:name], 
+      origin: params[:origin], 
+      milk: params[:milk], 
+      firmness: params[:firmness], 
+      image_url:params[:image_url]
+    )
     render json: add_cheese.as_json
   end
-  
   
 end

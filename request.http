@@ -3,3 +3,13 @@ GET http://localhost:3000/cheeses
 
 ### Add Cheese
 POST http://localhost:3000/cheeses
+Content-Type: application/json
+
+{
+"name": "Aged Gouda",
+"origin": "Netherlands",
+"milk": "Cow, Goat, Or Sheep",
+"firmness": "Hard",
+"image_url": "https://www.cheese.com/media/img/cheese/Aged_Gouda_cheese_1.jpg"
+
+}

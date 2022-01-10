@@ -1,0 +1,3 @@
+class AddCheeseController < ApplicationController
+  
+end
