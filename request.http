@@ -1,2 +1,5 @@
 ### All Cheese
-GET http://localhost:3000/cheese
+GET http://localhost:3000/cheeses
+
+### Add Cheese
+POST http://localhost:3000/cheeses
